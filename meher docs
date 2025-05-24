@@ -1,2 +1,3 @@
 https://docs.google.com/document/d/1tQZiTnnS9hOreFR7DkEwVPyNhDjoNI0WOHUu0RkbQH8/edit?tab=t.0
 https://docs.google.com/document/d/1nzKjIgr3C9TcVwyoBSd4knbpx6u2iPVqvWdpCyI2Zmo/edit?tab=t.0
+db.aggregateproduct.aggregate([{ $match: { name: "Pizza" } }, { $group: { _id: "$name", totalPrice: { $sum: "$price" }, avgRating: { $avg: "$rating" } } }])
