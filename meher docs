@@ -1,1 +1,2 @@
 https://docs.google.com/document/d/1tQZiTnnS9hOreFR7DkEwVPyNhDjoNI0WOHUu0RkbQH8/edit?tab=t.0
+mongosh--eval "db.student.updateOne({name:'Robert'},{ \$set: {subject:'Hindi'}})"
